@@ -1,4 +1,4 @@
-![Ohmyfood logo](assets/img/ohmyfood.svg)
+![Ohmyfood logo](src/assets/img/ohmyfood.svg)
 
 > Projet n°3 OpenClassrooms Développeur Web. — [...] 2022
 
@@ -11,11 +11,15 @@
 - Balises sémantiques
 - Conforme aux **normes W3C**
 - Préprocesseur CSS : **Sass**
+- Polices
+  - Logo et titres: **Shrikhand**
+  - Texte: **Roboto**
 
 ## Palette des couleurs
 
-- `#` → ****
-
+- `#9356DC` → **$primary**
+- `#FF79DA` → **$secondary**
+- `#99E2D0` → **$tertiary**
 
 ## Développement
 
