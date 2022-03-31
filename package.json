@@ -1,0 +1,24 @@
+{
+  "name": "dw_p3_ohmyfood_oc",
+  "version": "1.0.0",
+  "description": "Ohmyfood - P3 OC DW 2022",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss:src/assets/css/main.css",
+    "sass": "sass scss/main.scss:src/assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasbnt/DW_P3_Ohmyfood_OC.git"
+  },
+  "keywords": [
+    "oc",
+    "dw",
+    "project"
+  ],
+  "author": "Thomas Bnt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasbnt/DW_P3_Ohmyfood_OC/issues"
+  },
+  "homepage": "https://github.com/thomasbnt/DW_P3_Ohmyfood_OC#readme"
+}
