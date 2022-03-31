@@ -1,6 +1,6 @@
 ![Ohmyfood logo](src/assets/img/ohmyfood.svg)
 
-> Projet n°3 OpenClassrooms Développeur Web. — [...] 2022
+> Projet n°3 OpenClassrooms Développeur Web. — 31 Mars 2022
 
 ## Cahier des charges
 
