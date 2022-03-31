@@ -1,0 +1,16 @@
+@import "../utils/_variables.scss";
+
+button, .btn {
+  display: inline-block;
+  font-family: $ff-roboto;
+  background: linear-gradient($secondary, $primary);
+  color: white;
+  font-weight: 300;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+}

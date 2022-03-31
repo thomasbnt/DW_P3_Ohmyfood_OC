@@ -1,0 +1,60 @@
+/* ------------------ Colors ------------------ */
+/* ------------------ Fonts ------------------ */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+/* ------------------ Colors ------------------ */
+/* ------------------ Fonts ------------------ */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+/* ------------------ Colors ------------------ */
+/* ------------------ Fonts ------------------ */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+button, .btn {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  font-weight: 300;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+p, span {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
