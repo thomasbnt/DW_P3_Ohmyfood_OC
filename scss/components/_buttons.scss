@@ -5,12 +5,17 @@ button, a.btn {
   font-family: $ff-roboto;
   background: linear-gradient($secondary, $primary);
   color: white;
-  font-weight: 300;
-  padding: 10px 15px;
+  font-weight: 400;
+  padding: 15px 25px;
   cursor: pointer;
   border-radius: 20px;
   text-decoration: none;
   -ms-user-select: none;
   user-select: none;
   -moz-user-select: none;
+  box-shadow: #0000006e 3px 2px 3px;
+  transition: .2s;
+  &:hover {
+    box-shadow: #0000006e 4px 3px 3px;
+  }
 }
