@@ -1,2 +1,20 @@
 @import "../utils/_variables.scss";
+.navbar {
+  display: flex;
+  background-color: white;
+  box-shadow: #1515153b 1px 2px;
+  position: fixed;
+  top: 0;
+  height: $navheight;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  &__title {
+    font-family: $ff-shrikhand;
+    font-size: 2rem;
+  }
+  &__arrow {
+
+  }
+}
 
