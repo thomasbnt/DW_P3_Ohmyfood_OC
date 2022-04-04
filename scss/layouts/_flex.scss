@@ -1,0 +1,19 @@
+@import "../utils/_variables.scss";
+.ctner {
+  padding-top: $navheight;
+}
+.row {
+  display: flex;
+  flex: 3;
+}
+
+@for $c from 1 through 3 {
+  .col-#{$c} {
+    flex: $c;
+  }
+}
+
+.al-c {
+  align-items: center;
+}
+
