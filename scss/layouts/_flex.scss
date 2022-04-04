@@ -8,8 +8,10 @@
   display: flex;
   flex: 3;
 }
-
-@for $c from 1 through 3 {
+.col {
+  flex: 1;
+}
+@for $c from 2 through 3 {
   .col-#{$c} {
     flex: $c;
   }
