@@ -1,0 +1,36 @@
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+
+.restaurants__card {
+  &_section {
+    display: flex;
+  }
+
+  &__image {
+
+  }
+
+  &__content {
+    &__body {
+
+    }
+
+    &__title {
+    }
+
+    &__description {
+    }
+  }
+
+  &__heart {
+    transition: .2s;
+    font: normal normal normal 14px/1 ForkAwesome;
+    content: "\f08a";
+    &:hover {
+      cursor: pointer;
+      font: normal normal normal 14px/1 ForkAwesome;
+      content: "\f004";
+      color: $primary;
+    }
+  }
+}
