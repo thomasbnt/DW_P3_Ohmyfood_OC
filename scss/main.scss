@@ -1,16 +1,10 @@
+@import "base/_normalize.scss";
 @import "utils/_variables.scss";
 @import "utils/_mixins.scss";
 @import "utils/_functions.scss";
+@import "base/_markup_basis.scss";
+@import "base/_loading.scss";
 @import "components/_buttons.scss";
-
-*, :after, :before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-  @include ff-shrikhand;
-}
-p, span {
-  @include ff-roboto;
-}
+@import "layouts/_flex.scss";
+@import "layouts/_navbar.scss";
+@import "layouts/_footer.scss";
