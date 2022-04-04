@@ -8,13 +8,22 @@
 html {
   scroll-behavior: smooth;
 }
+// D'après le Brief créatif
+// Logo et titres: Shrikhand -> Sauf que depuis les maquettes, seul le titre "Ohmyfood!" est dans ce style.
+// Texte: Roboto
 h1, h2, h3, h4, h5, h6 {
-  @include ff-shrikhand;
+  /*@include ff-shrikhand;*/
+  font-weight: 800;
 }
-p, span {
+h1, h2, h3, h4, h5, h6, p, span {
   @include ff-roboto;
   line-height: 1.4;
 }
 a {
   cursor: pointer;
+}
+img {
+  user-select: none;
+  max-width: 100%;
+  height: auto;
 }
