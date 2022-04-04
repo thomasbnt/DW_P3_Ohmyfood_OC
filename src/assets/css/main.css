@@ -210,6 +210,10 @@ h1, h2, h3, h4, h5, h6, p, span {
   line-height: 1.4;
 }
 
+h2 {
+  margin-bottom: 2rem;
+}
+
 a {
   cursor: pointer;
 }
@@ -250,7 +254,7 @@ button, a.btn {
   -moz-user-select: none;
   box-shadow: #0000006e 3px 2px 3px;
   transition: 0.2s;
-  border-radius: 30px;
+  border-radius: 30px 30px 30px 30px;
 }
 button:hover, a.btn:hover {
   box-shadow: #0000006e 4px 3px 3px;
@@ -274,8 +278,34 @@ button:hover, a.btn:hover {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
 }
+.restaurants__card {
+  flex: 1;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: #35353547 2px 3px 10px;
+  background-color: white;
+}
+.restaurants__card__new {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #99E2D0;
+  color: #008766;
+  margin: 1rem 2rem;
+  padding: 0.2rem 0.7rem;
+  font-weight: 600;
+}
 .restaurants__card_section {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurants__card__image img {
+  width: 100%;
+  min-width: 120px;
+  max-height: 136px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants__card__content {
+  padding: 1rem;
 }
 .restaurants__card__heart {
   transition: 0.2s;
@@ -298,7 +328,7 @@ button:hover, a.btn:hover {
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
 }
 .content {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .row {
@@ -336,7 +366,7 @@ button:hover, a.btn:hover {
   box-shadow: #1515153b 1px 2px;
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   z-index: 10;
   text-align: center;
@@ -424,7 +454,7 @@ button:hover, a.btn:hover {
   padding: 1.3rem 1rem;
   width: 100%;
   box-shadow: #35353547 2px 3px 10px;
-  border-radius: 20px;
+  border-radius: 20px 20px 20px 20px;
 }
 .functioning_section__card:last-of-type {
   background-color: #F5EDFF;
@@ -434,7 +464,7 @@ button:hover, a.btn:hover {
 }
 .functioning_section__number {
   font-family: "Roboto", sans-serif;
-  border-radius: 100%;
+  border-radius: 100% 20px 20px 20px;
   background-color: #9356DC;
   color: white;
   padding: 4px 8px;
@@ -471,13 +501,36 @@ button:hover, a.btn:hover {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
 @media (min-width: 900px) {
   .functioning_section__group_cards {
+    max-width: 1300px;
     display: flex;
     flex-direction: row;
     gap: 30px;
-    max-width: 1300px;
     margin: 2rem 3rem;
+  }
+
+  .restaurants__card_section {
+    max-width: 1300px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .restaurants__card {
+    min-width: calc(50% - 20px);
+  }
+  .restaurants__card_section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
