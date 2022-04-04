@@ -2,20 +2,24 @@
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
+$light-grey: #F6F6F6;
 
 // ------------------ Fonts ------------------
 @font-face {
   font-family: 'Shrikhand';
-  src: url("assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
 }
 
 $ff-shrikhand: 'Shrikhand', sans-serif;
 $ff-roboto: 'Roboto', sans-serif;
 
-// ------------------ Navbar values ------------------
+// ------------------ Other values ------------------
 $navheight: 50px;
+
+$linear-gradient: linear-gradient($secondary, $primary), $primary;
+
