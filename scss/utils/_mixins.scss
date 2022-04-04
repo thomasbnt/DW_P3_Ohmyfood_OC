@@ -8,3 +8,8 @@
   font-family: $ff-roboto;
 }
 
+@mixin border-radius($radius : 20px) {
+  border-radius: $radius;
+}
+
+
