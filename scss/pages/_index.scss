@@ -64,7 +64,7 @@
     background-color: $light-grey;
     padding: 1.3rem 1rem;
     width: 100%;
-    box-shadow: #35353547 2px 3px 10px;
+    @include box-shadow();
     @include border-radius();
 
     &:last-of-type {
