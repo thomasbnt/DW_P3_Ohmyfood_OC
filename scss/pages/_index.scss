@@ -1,0 +1,36 @@
+@import "../utils/_variables.scss";
+.hero_section {
+  user-select: none;
+  &__localisation {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+    color: #353535;
+    padding: 20px 0;
+    .fa {
+      font-size: 1.1rem;
+      margin-right: 10px;
+    }
+  }
+  &__content {
+    display: flex;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 3.5rem 10px;
+    &__title {
+      h2 {
+        font-family: $ff-roboto;
+        font-size: 1.5rem;
+        margin: 0 2rem;
+      }
+      p {
+        font-size: 17px;
+        margin-top: 1rem;
+        font-weight: 300;
+      }
+    }
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+}
