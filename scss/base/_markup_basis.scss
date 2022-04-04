@@ -5,11 +5,15 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1, h2, h3, h4, h5, h6 {
   @include ff-shrikhand;
 }
 p, span {
   @include ff-roboto;
+  line-height: 1.4;
 }
 a {
   cursor: pointer;
