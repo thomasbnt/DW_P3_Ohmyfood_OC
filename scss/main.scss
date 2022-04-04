@@ -5,7 +5,11 @@
 @import "base/_markup_basis.scss";
 @import "base/_loading.scss";
 @import "components/_buttons.scss";
+@import "components/_heart.scss";
+@import "components/_cards.scss";
 @import "layouts/_flex.scss";
 @import "layouts/_navbar.scss";
 @import "layouts/_footer.scss";
 @import "pages/_index.scss";
+
+@import "utils/_media_queries.scss";

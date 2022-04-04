@@ -1,0 +1,12 @@
+@import "../utils/_variables.scss";
+
+@media (min-width: 900px) {
+  .functioning_section__group_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 2rem 3rem;
+  }
+}
+
