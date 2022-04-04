@@ -2,15 +2,37 @@
 @import "../utils/_mixins.scss";
 
 .restaurants__card {
-  &_section {
-    display: flex;
+  flex: 1;
+  @include border-radius();
+  @include box-shadow();
+  background-color: white;
+
+  &__new {
+    @include border-radius(5px, 5px, 5px, 5px);
+    background-color: #99E2D0;
+    color: #008766;
+    margin: 1rem 2rem;
+    padding: 0.2rem 0.7rem;
+    font-weight: 600;
   }
 
-  &__image {
+  &_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  &__image img {
+    width: 100%;
+    min-width: 120px;
+    max-height: 136px;
+    object-fit: cover;
+    @include border-radius(20px, 20px, 0, 0);
   }
 
   &__content {
+    padding: 1rem;
+
     &__body {
 
     }
@@ -26,6 +48,7 @@
     transition: .2s;
     font: normal normal normal 14px/1 ForkAwesome;
     content: "\f08a";
+
     &:hover {
       cursor: pointer;
       font: normal normal normal 14px/1 ForkAwesome;
