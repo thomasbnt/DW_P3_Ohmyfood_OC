@@ -8,8 +8,15 @@
   font-family: $ff-roboto;
 }
 
-@mixin border-radius($radius : 20px) {
-  border-radius: $radius;
+@mixin border-radius($radius1 : 20px, $radius2 : 20px, $radius3 : 20px, $radius4 : 20px) {
+  border-radius: $radius1 $radius2 $radius3 $radius4;
 }
 
+@mixin box-shadow() {
+  box-shadow: #35353547 2px 3px 10px;
+}
+
+@mixin mw-1300 {
+  max-width: 1300px;
+}
 
