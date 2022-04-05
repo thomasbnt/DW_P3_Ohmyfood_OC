@@ -1,6 +1,10 @@
-![Ohmyfood logo](src/assets/img/ohmyfood.svg)
+![Ohmyfood logo](assets/img/ohmyfood.svg)
 
 > Projet n°3 OpenClassrooms Développeur Web. — 31 Mars 2022
+
+
+| [Lien du site web](https://thomasbnt.github.io/DW_P3_Ohmyfood_OC/) |
+|----------------------|
 
 ## Cahier des charges
 
