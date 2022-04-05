@@ -310,7 +310,6 @@ button:hover, a.btn:hover {
 }
 .restaurants__card__image img {
   width: 100%;
-  min-width: 130px;
   max-height: 130px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -595,6 +594,9 @@ footer a {
 @media (min-width: 500px) and (max-width: 900px) {
   .restaurants__card {
     min-width: calc(50% - 20px);
+  }
+  .restaurants__card__image img {
+    max-height: 105px;
   }
   .restaurants__card_section {
     flex-direction: row;

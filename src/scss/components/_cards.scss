@@ -34,7 +34,6 @@
 
   &__image img {
     width: 100%;
-    min-width: 130px;
     max-height: 130px;
     object-fit: cover;
     @include border-radius(20px, 20px, 0, 0);

@@ -41,7 +41,9 @@
   $gap_mw_500_restaurants_card: 20px;
   .restaurants__card {
     min-width: calc(100% / 2 - $gap_mw_500_restaurants_card);
-
+    &__image img {
+      max-height: 105px;
+    }
     &_section {
       flex-direction: row;
       flex-wrap: wrap;
