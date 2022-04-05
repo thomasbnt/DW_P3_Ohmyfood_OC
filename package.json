@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Ohmyfood - P3 OC DW 2022",
   "scripts": {
-    "dev": "sass --watch scss/main.scss:src/assets/css/main.css",
-    "sass": "sass scss/main.scss:src/assets/css/main.css"
+    "dev": "sass --watch src/scss/main.scss:assets/css/main.css",
+    "sass": "sass src/scss/main.scss:assets/css/main.css"
   },
   "repository": {
     "type": "git",

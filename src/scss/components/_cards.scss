@@ -2,18 +2,28 @@
 @import "../utils/_mixins.scss";
 
 .restaurants__card {
+  position: relative;
   flex: 1;
   @include border-radius();
   @include box-shadow();
   background-color: white;
+  &:hover {
+    img {
+      @include brightness-effect();
+    }
+  }
 
   &__new {
     @include border-radius(5px, 5px, 5px, 5px);
     background-color: #99E2D0;
     color: #008766;
-    margin: 1rem 2rem;
+    margin: 1rem;
     padding: 0.2rem 0.7rem;
     font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
   }
 
   &_section {
@@ -32,16 +42,6 @@
 
   &__content {
     padding: 1rem;
-
-    &__body {
-
-    }
-
-    &__title {
-    }
-
-    &__description {
-    }
   }
 
   &__heart {

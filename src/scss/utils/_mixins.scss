@@ -18,5 +18,11 @@
 
 @mixin mw-1300 {
   max-width: 1300px;
+  margin: 0 auto;
+}
+
+@mixin brightness-effect($value : .8) {
+  transition: .2s;
+  filter: brightness($value);
 }
 

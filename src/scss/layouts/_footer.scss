@@ -1,0 +1,40 @@
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  @include ff-roboto;
+  background-color: $dark-grey;
+  color: $light-grey;
+
+  a {
+    color: $light-grey;
+  }
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+
+  &__logo img {
+    width: 100px;
+    filter: invert(1);
+    padding-bottom: 1rem;
+  }
+
+  &__menu {
+    list-style-type: none;
+    .fa {
+      padding-right: .4rem;
+    }
+    li {
+      margin: .5rem 0;
+      &:hover {
+        @include brightness-effect();
+
+      }
+    }
+  }
+}
