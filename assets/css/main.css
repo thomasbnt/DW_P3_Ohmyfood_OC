@@ -310,8 +310,8 @@ button:hover, a.btn:hover {
 }
 .restaurants__card__image img {
   width: 100%;
-  min-width: 120px;
-  max-height: 136px;
+  min-width: 130px;
+  max-height: 130px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
