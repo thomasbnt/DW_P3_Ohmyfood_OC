@@ -7,7 +7,7 @@
 - Responsive design
 - Mobile first
 - Adapter le format image → Compresser les images & optimiser la qualité sous format `.webp`
-- Icônes : **Fork Awesome** 
+- Icônes : **Font Awesome via [CDNJS](https://cdnjs.com/libraries/font-awesome)** 
 - Balises sémantiques
 - Conforme aux **normes W3C**
 - Préprocesseur CSS : **Sass**
