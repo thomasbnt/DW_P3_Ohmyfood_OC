@@ -242,6 +242,14 @@ img {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
 button, a.btn {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -337,6 +345,22 @@ button:hover, a.btn:hover {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
 .content {
   padding-top: 60px;
 }
@@ -379,12 +403,19 @@ button:hover, a.btn:hover {
   height: 60px;
   width: 100%;
   z-index: 10;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .navbar__title {
   font-family: "Shrikhand", sans-serif;
   font-size: 2rem;
 }
+.navbar__arrow {
+  left: 0;
+  position: absolute;
+  margin-left: 1rem;
+}
+
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");

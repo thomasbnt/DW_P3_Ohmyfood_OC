@@ -8,13 +8,15 @@
   height: $navheight;
   width: 100%;
   z-index: 10;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   &__title {
     font-family: $ff-shrikhand;
     font-size: 2rem;
   }
   &__arrow {
-
+    left: 0;
+    position: absolute;
+    margin-left: 1rem;
   }
 }
-
