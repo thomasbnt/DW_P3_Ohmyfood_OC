@@ -12,8 +12,8 @@
   border-radius: $radius1 $radius2 $radius3 $radius4;
 }
 
-@mixin box-shadow() {
-  box-shadow: #35353547 2px 3px 10px;
+@mixin box-shadow($x : 2px, $y: 3px, $blur : 10px) {
+  box-shadow: #35353547 $x $y $blur;
 }
 
 @mixin mw-1300 {
