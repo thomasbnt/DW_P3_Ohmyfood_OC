@@ -8,11 +8,16 @@
   font-family: $ff-roboto;
 }
 
-@mixin border-radius($radius1 : 20px, $radius2 : 20px, $radius3 : 20px, $radius4 : 20px) {
+@mixin border-radius(
+  $radius1: 20px,
+  $radius2: 20px,
+  $radius3: 20px,
+  $radius4: 20px
+) {
   border-radius: $radius1 $radius2 $radius3 $radius4;
 }
 
-@mixin box-shadow($x : 2px, $y: 3px, $blur : 10px) {
+@mixin box-shadow($x: 2px, $y: 3px, $blur: 10px) {
   box-shadow: #35353547 $x $y $blur;
 }
 
@@ -21,8 +26,14 @@
   margin: 0 auto;
 }
 
-@mixin brightness-effect($value : .8) {
-  transition: .2s;
+@mixin brightness-effect($value: 0.8) {
+  transition: 0.2s;
   filter: brightness($value);
+}
+
+@mixin ellipsis-text() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
