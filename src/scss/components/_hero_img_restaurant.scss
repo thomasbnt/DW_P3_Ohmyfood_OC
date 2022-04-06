@@ -1,3 +1,134 @@
 @import "../utils/_variables.scss";
 @import "../utils/_mixins.scss";
 
+.hero_restaurant__header {
+  position: relative;
+  a > img {
+    user-select: none;
+  }
+}
+.restaurant {
+  &__body {
+    position: relative;
+    background-color: $light-grey;
+    margin-top: -30px;
+    z-index: 2;
+    @include border-radius(20px, 20px, 0, 0);
+    padding: 0.8rem 1.5rem 0.8rem 1rem;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_fav {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+    h1 {
+      @include ff-shrikhand;
+      font-size: 1.4rem;
+    }
+  }
+  &__section {
+    padding-top: 1rem;
+    h2 {
+      color: $dark-grey;
+      user-select: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    hr {
+      border: $tertiary solid 1px;
+      background-color: $tertiary;
+      display: block;
+      max-width: 40px;
+    }
+  }
+  &__card {
+    display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    @include border-radius(15px, 15px, 15px, 15px);
+    @include ff-roboto;
+    @include box-shadow(1px, 2px, 5px);
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    &_info {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+    &_price,
+    header {
+      padding: 0.5rem;
+    }
+    &_title,
+    &_desc,
+    header {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    &_check {
+      background-color: $tertiary;
+      display: flex;
+      width: 4rem;
+      display: flex;
+      margin-right: -4rem;
+      align-items: center;
+      justify-content: center;
+      transition-duration: 0.5s;
+      .rounded {
+        @include border-radius(50%, 50%, 50%, 50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #fff;
+        color: $tertiary;
+      }
+      .fa {
+        margin: 5px;
+      }
+    }
+    &:hover {
+      .restaurant__card_check {
+        margin: 0;
+        transform: translateX(0);
+        transition-duration: 0.5s;
+      }
+      transition: 0.2s;
+      @include box-shadow(2px, 4px, 7px);
+    }
+    &_group {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+      gap: 10px;
+    }
+    &_flex {
+      display: flex;
+    }
+    &_title {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 0.3rem;
+    }
+    &_flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 4px;
+    }
+    &_price {
+      display: flex;
+      align-items: flex-end;
+      font-weight: bold;
+    }
+  }
+}
+.call_to_command {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 4rem 0;
+  background-color: $light-grey;
+}
