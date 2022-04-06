@@ -21,4 +21,8 @@ button, a.btn {
     filter: brightness(1.1);
     background: $linear-gradient;
   }
+ &-large {
+   @extend .btn;
+    padding: 1rem 3rem;
+  }
 }
