@@ -1,0 +1,73 @@
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+.restaurant {
+  &__card {
+    display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    @include border-radius(15px, 15px, 15px, 15px);
+    @include ff-roboto;
+    @include box-shadow(1px, 2px, 5px);
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 1rem 0;
+    &_info {
+      flex: 1;
+      @include ellipsis-text;
+      h3 {
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 0.3rem;
+      }
+      h3,
+      p {
+        @include ellipsis-text;
+      }
+    }
+    &_info,
+    &_price {
+      padding: 0.7rem;
+    }
+    &_check {
+      background-color: $tertiary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      margin-right: -4rem;
+      transition-duration: 0.5s;
+      .rounded {
+        @include border-radius(50%, 50%, 50%, 50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #fff;
+        color: $tertiary;
+      }
+      .fa {
+        margin: 5px;
+      }
+    }
+    &:hover {
+      .restaurant__card_check {
+        margin: 0;
+        .fa {
+          animation: check 0.5s;
+        }
+      }
+      transition: 0.2s;
+      @include box-shadow(2px, 4px, 7px);
+    }
+    &_group {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+      gap: 10px;
+    }
+    &_price {
+      display: flex;
+      align-items: flex-end;
+      font-weight: bold;
+    }
+  }
+}

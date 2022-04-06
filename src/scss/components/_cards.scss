@@ -15,7 +15,7 @@
 
   &__new {
     @include border-radius(5px, 5px, 5px, 5px);
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #008766;
     margin: 1rem;
     padding: 0.2rem 0.7rem;
@@ -44,7 +44,7 @@
   }
 
   &__heart {
-    transition: .2s;
+    transition: 0.2s;
     font: normal normal normal 14px/1 ForkAwesome;
     content: "\f08a";
 
