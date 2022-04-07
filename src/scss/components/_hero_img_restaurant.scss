@@ -3,7 +3,11 @@
 
 .hero_restaurant__header {
   position: relative;
-  a > img {
+  &_img {
     user-select: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
   }
 }
