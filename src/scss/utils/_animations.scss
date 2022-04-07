@@ -18,7 +18,7 @@
 }
 @for $n from 1 through 30 {
   $q: calc($n/10);
-  $d: $q + 0.2;
+  $d: calc($q + 0.2);
   .anim_show-#{$n} {
     animation: show 0.3s #{$d}s both;
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
