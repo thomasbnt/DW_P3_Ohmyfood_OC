@@ -1,8 +1,41 @@
 @keyframes check {
-    from {
-        transform:  rotate(-290deg);
-    }
-    to {
-        transform: rotrate(0deg);
-    }
+  from {
+    transform: rotate(-290deg);
   }
+  to {
+    transform: rotrate(0deg);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@for $n from 1 through 30 {
+  $q: $n/10;
+  $d: $q + 0.2;
+  .anim_show-#{$n} {
+    animation: show 0.3s #{$d}s both;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+}
+@keyframes steps {
+  0% {
+      background: $primary;
+  }
+  100% {
+    background: #382054;
+  }
+}
+@for $s from 1 through 3 {
+  $t: $s + 4;
+  .anim_steps-#{$s} .functioning_section__number {
+    animation: ease-in-out steps #{$t}s infinite;
+    animation-delay: #{$s}s;
+  }
+}

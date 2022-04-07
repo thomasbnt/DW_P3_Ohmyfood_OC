@@ -2,41 +2,54 @@
 @import "../utils/_mixins.scss";
 
 .restaurant {
-    &__body {
-      position: relative;
-      background-color: $light-grey;
-      margin-top: -30px;
-      z-index: 2;
-      @include border-radius(20px, 20px, 0, 0);
-      padding: 0.8rem 1.5rem 0.8rem 1rem;
-    }
-    &__title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      &_fav {
-        cursor: pointer;
-        font-size: 1.5rem;
-      }
-      h1 {
-        @include ff-shrikhand;
-        font-size: 1.4rem;
-      }
-    }
-    &__section {
-      padding-top: 1rem;
-      h2 {
-        color: $dark-grey;
-        user-select: none;
-        font-size: 1rem;
-        text-transform: uppercase;
-        margin-bottom: 0;
-      }
-      hr {
-        border: $tertiary solid 1px;
-        background-color: $tertiary;
-        display: block;
-        max-width: 40px;
+  &__body {
+    position: relative;
+    background-color: $light-grey;
+    margin-top: -30px;
+    z-index: 2;
+    @include border-radius(20px, 20px, 0, 0);
+    padding: 0.8rem 1.5rem 0.8rem 1rem;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_fav .fa-regular {
+      cursor: pointer;
+      font-size: 1.5rem;
+      &:hover {
+        scale: 1.1;
+        transition: .4s;
+        background: $linear-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:before {
+          font-family: "Font Awesome 6 Free";
+          content: "\f004";
+          font-weight: 900;
+        }
       }
     }
+    h1 {
+      @include ff-shrikhand;
+      font-size: 1.4rem;
+    }
+  }
+  &__section {
+    padding-top: 1rem;
+    h2 {
+      color: $dark-grey;
+      user-select: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    hr {
+      border: $tertiary solid 1px;
+      background-color: $tertiary;
+      display: block;
+      max-width: 40px;
+    }
+  }
 }
