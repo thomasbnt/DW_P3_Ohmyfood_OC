@@ -15,6 +15,9 @@
     "dw",
     "project"
   ],
+  "dependencies": {
+    "sass": "1.49.11"
+  },
   "author": "Thomas Bnt",
   "license": "ISC",
   "bugs": {
