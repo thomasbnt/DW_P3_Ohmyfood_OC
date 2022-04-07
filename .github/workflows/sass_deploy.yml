@@ -22,6 +22,6 @@ jobs:
     - run: npm run sass --if-present
     - run: git config --global user.email "admin+ghactions@thomasbnt.fr"
     - run: git config --global user.name "Thomas Bnt"
-    - run: git add *.css
+    - run: git add main.css
     - run: git commit -m "Updated CSS from SCSS files"
     - run: git push
