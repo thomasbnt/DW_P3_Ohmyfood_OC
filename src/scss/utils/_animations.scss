@@ -17,7 +17,7 @@
   }
 }
 @for $n from 1 through 30 {
-  $q: $n/10;
+  $q: calc($n/10);
   $d: $q + 0.2;
   .anim_show-#{$n} {
     animation: show 0.3s #{$d}s both;
