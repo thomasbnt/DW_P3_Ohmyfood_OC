@@ -3,12 +3,11 @@
 
 .hero_section {
   user-select: none;
-
   &__localisation {
     display: flex;
     font-weight: 600;
     justify-content: center;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     color: #353535;
     padding: 20px 0;
 
@@ -51,7 +50,7 @@
 
   &__group_cards {
     display: flex;
-    margin: 2rem .6rem;
+    margin: 2rem 0.6rem;
     flex-direction: column;
     gap: 15px;
   }
@@ -70,7 +69,7 @@
 
   &__number {
     @include ff-roboto;
-    @include border-radius(100%);
+    @include border-radius(100%, 100%, 100%, 100%);
     background-color: $primary;
     color: white;
     padding: 4px 8px;
@@ -85,7 +84,7 @@
   &__icon {
     font-size: 1.3rem;
     text-align: center;
-    color: #7E7E7E;
+    color: #7e7e7e;
 
     .fa-mobile-phone {
       font-size: 1.8rem;
@@ -103,6 +102,3 @@
   background-color: $light-grey;
   padding: 3rem 15px;
 }
-
-
-
