@@ -18,4 +18,5 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 16.0
+    - run: npm install
     - run: npm run sass --if-present
