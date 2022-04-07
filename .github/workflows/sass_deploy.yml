@@ -20,3 +20,6 @@ jobs:
         node-version: 16.0
     - run: npm install
     - run: npm run sass --if-present
+    - run: git add *.css
+    - run: git commit -m "Updated CSS from SCSS files"
+    - run: git push
