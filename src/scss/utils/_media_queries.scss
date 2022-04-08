@@ -31,6 +31,17 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .restaurant__title {
+    margin: auto 5rem;
+  }
+  .restaurant__section_flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
 @media (min-width: 1500px) {
   .restaurants_section,
   .functioning_section {
@@ -52,6 +63,6 @@
   }
   .restaurants_section,
   .functioning_section {
-    padding: 3rem 5rem;
+    padding: 3rem 2rem;
   }
 }
