@@ -484,12 +484,12 @@ button, a.btn, a.btn-large {
   -ms-user-select: none;
   user-select: none;
   -moz-user-select: none;
-  box-shadow: #0000006e 3px 2px 3px;
+  box-shadow: rgba(0, 0, 0, 0.431372549) 3px 2px 3px;
   transition: 0.2s;
   border-radius: 30px 30px 30px 30px;
 }
 button:hover, a.btn:hover, a.btn-large:hover {
-  box-shadow: #0000006e 4px 3px 3px;
+  box-shadow: rgba(0, 0, 0, 0.431372549) 4px 3px 3px;
   filter: brightness(1.1);
   background: linear-gradient(#FF79DA, #9356DC), #9356DC;
 }
@@ -545,7 +545,7 @@ button-large, a.btn-large {
   position: relative;
   flex: 1;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: #35353547 2px 3px 10px;
+  box-shadow: rgba(53, 53, 53, 0.2784313725) 2px 3px 10px;
   background-color: white;
 }
 .restaurants__card:hover img {
@@ -616,7 +616,7 @@ button-large, a.btn-large {
   background-color: #fff;
   border-radius: 15px 15px 15px 15px;
   font-family: "Roboto", sans-serif;
-  box-shadow: #35353547 1px 2px 5px;
+  box-shadow: rgba(53, 53, 53, 0.2784313725) 1px 2px 5px;
   user-select: none;
   cursor: pointer;
   transition: 0.2s;
@@ -662,7 +662,7 @@ button-large, a.btn-large {
 }
 .restaurant__card:hover {
   transition: 0.2s;
-  box-shadow: #35353547 2px 4px 7px;
+  box-shadow: rgba(53, 53, 53, 0.2784313725) 2px 4px 7px;
 }
 .restaurant__card:hover .restaurant__card_check {
   margin: 0;
@@ -753,7 +753,7 @@ button-large, a.btn-large {
 .navbar {
   display: flex;
   background-color: white;
-  box-shadow: #1515153b 1px 2px;
+  box-shadow: rgba(21, 21, 21, 0.231372549) 1px 2px;
   position: fixed;
   top: 0;
   height: 60px;
@@ -894,7 +894,7 @@ footer a {
   background-color: #F6F6F6;
   padding: 1.3rem 1rem;
   width: 100%;
-  box-shadow: #35353547 2px 3px 10px;
+  box-shadow: rgba(53, 53, 53, 0.2784313725) 2px 3px 10px;
   border-radius: 20px 20px 20px 20px;
 }
 .functioning_section__number {
