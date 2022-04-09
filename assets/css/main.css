@@ -433,7 +433,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.954);
   z-index: 10;
   animation: opac 1.3s cubic-bezier(0.15, 0.68, 0.95, 0.85) both;
@@ -504,6 +504,27 @@ button-large, a.btn-large {
   background-color: #F6F6F6;
 }
 
+.restaurants__card_heart .fa-regular,
+.restaurant__title_fav .fa-regular {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.restaurants__card_heart .fa-regular:hover,
+.restaurant__title_fav .fa-regular:hover {
+  scale: 1.1;
+  transition: 0.4s;
+  background: linear-gradient(#FF79DA, #9356DC), #9356DC;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants__card_heart .fa-regular:hover:before,
+.restaurant__title_fav .fa-regular:hover:before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f004";
+  font-weight: 900;
+}
+
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -531,7 +552,7 @@ button-large, a.btn-large {
   transition: 0.2s;
   filter: brightness(0.8);
 }
-.restaurants__card__new {
+.restaurants__card_new {
   border-radius: 5px 5px 5px 5px;
   background-color: #99e2d0;
   color: #008766;
@@ -548,21 +569,25 @@ button-large, a.btn-large {
   flex-direction: column;
   gap: 20px;
 }
-.restaurants__card__image img {
+.restaurants__card_image img {
   width: 100%;
   max-height: 130px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 .restaurants__card__content {
+  display: flex;
   padding: 1rem;
 }
-.restaurants__card__heart {
+.restaurants__card__content_body {
+  flex: 1;
+}
+.restaurants__card_heart {
   transition: 0.2s;
   font: normal normal normal 14px/1 ForkAwesome;
   content: "\f08a";
 }
-.restaurants__card__heart:hover {
+.restaurants__card_heart:hover {
   cursor: pointer;
   font: normal normal normal 14px/1 ForkAwesome;
   content: "\f004";
@@ -935,19 +960,6 @@ footer a {
 .restaurant__title_fav .fa-regular {
   cursor: pointer;
   font-size: 1.5rem;
-}
-.restaurant__title_fav .fa-regular:hover {
-  scale: 1.1;
-  transition: 0.4s;
-  background: linear-gradient(#FF79DA, #9356DC), #9356DC;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.restaurant__title_fav .fa-regular:hover:before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f004";
-  font-weight: 900;
 }
 .restaurant__title h1 {
   font-family: "Shrikhand", sans-serif;

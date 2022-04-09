@@ -13,7 +13,7 @@
     }
   }
 
-  &__new {
+  &_new {
     @include border-radius(5px, 5px, 5px, 5px);
     background-color: #99e2d0;
     color: #008766;
@@ -32,7 +32,7 @@
     gap: 20px;
   }
 
-  &__image img {
+  &_image img {
     width: 100%;
     max-height: 130px;
     object-fit: cover;
@@ -40,10 +40,14 @@
   }
 
   &__content {
+    display: flex;
     padding: 1rem;
+    &_body {
+      flex: 1;
+    }
   }
 
-  &__heart {
+  &_heart {
     transition: 0.2s;
     font: normal normal normal 14px/1 ForkAwesome;
     content: "\f08a";

@@ -17,19 +17,6 @@
     &_fav .fa-regular {
       cursor: pointer;
       font-size: 1.5rem;
-      &:hover {
-        scale: 1.1;
-        transition: .4s;
-        background: $linear-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        &:before {
-          font-family: "Font Awesome 6 Free";
-          content: "\f004";
-          font-weight: 900;
-        }
-      }
     }
     h1 {
       @include ff-shrikhand;
