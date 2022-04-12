@@ -30,10 +30,8 @@
 - Projet réalisé avec **Intellij**. 
 - Images compressées et transformé au format adéquat avec **[Squoosh](https://squoosh.app/)**
 
-## Notes
-
 ## Todo 
 
-- [ ] Semantic HTML
-- [ ] Images compressées et optimisées
-- [ ] Validé avec le W3C
+- [x] Semantic HTML
+- [x] Images compressées et optimisées
+- [x] Validé avec le W3C
