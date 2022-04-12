@@ -3,7 +3,7 @@
     cursor: pointer;
     font-size: 1.5rem;
     &:hover {
-      scale: 1.1;
+      transform: scale(1.1);
       transition: .4s;
       background: $linear-gradient;
       background-clip: text;
