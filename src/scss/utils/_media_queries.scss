@@ -33,13 +33,13 @@
 }
 
 @media (min-width: 1200px) {
-  .restaurant__title {
-    margin: auto 5rem;
-  }
   .restaurant__section_flex {
     display: flex;
     justify-content: center;
     gap: 10px;
+  }
+  .restaurant__card {
+    max-width: 330px;
   }
 }
 @media (min-width: 1500px) {
