@@ -6,16 +6,6 @@ $light-grey: #F6F6F6;
 $dark-grey: #353535;
 
 // ------------------ Fonts ------------------
-@font-face {
-  font-family: 'Shrikhand';
-  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
-}
-
 $ff-shrikhand: 'Shrikhand', sans-serif;
 $ff-roboto: 'Roboto', sans-serif;
 
