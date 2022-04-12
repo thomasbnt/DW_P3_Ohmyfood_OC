@@ -63,8 +63,12 @@
     background-color: $light-grey;
     padding: 1.3rem 1rem;
     width: 100%;
+    transition: .2s;
     @include box-shadow();
     @include border-radius();
+    &:hover {
+      background-color: #9256dc3f;
+    }
   }
 
   &__number {

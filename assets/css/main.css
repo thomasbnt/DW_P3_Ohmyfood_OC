@@ -734,8 +734,12 @@ footer a {
   background-color: #F6F6F6;
   padding: 1.3rem 1rem;
   width: 100%;
+  transition: 0.2s;
   box-shadow: #35353547 2px 3px 10px;
   border-radius: 20px 20px 20px 20px;
+}
+.functioning_section__card:hover {
+  background-color: #9256dc3f;
 }
 .functioning_section__number {
   font-family: "Roboto", sans-serif;
